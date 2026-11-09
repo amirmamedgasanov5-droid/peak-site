@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>repeat.it</title>
+<meta name="description" content="Show up. Log the set. See the progress. Beat the record. Repeat.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+<style>
+  /* Figma frame "MacBook Air - 1": 1280 x 832, black background */
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html, body { height:100%; }
+  body {
+    background:#000; overflow:hidden; position:relative; min-height:100vh;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; font-weight:500;
+  }
+
+  /* block at x=520 y=363 in a 1280x832 frame, 203 wide */
+  .block {
+    position:absolute; width:203px;
+    left:calc(50% - 120px); top:calc(50% - 53px);
+    display:flex; flex-direction:column; align-items:flex-start; gap:8px;
+  }
+  .brand { display:flex; align-items:center; gap:8px; }
+  .brand img { width:14.158px; height:14.3px; display:block; }
+  .brand span { font-size:12px; line-height:1; color:#8e8e93; white-space:nowrap; }
+
+  .content { display:flex; flex-direction:column; align-items:flex-start; gap:20px; width:100%; }
+  .content p { font-size:16px; line-height:normal; color:#fff; width:203px; }
+
+  .btn {
+    display:flex; align-items:center; justify-content:center;
+    height:28px; padding:8px; border-radius:152px;
+    background:#ffa000; color:#000; text-decoration:none;
+    font-size:14px; line-height:normal; white-space:nowrap;
+    transition:transform .15s ease, opacity .15s ease;
+  }
+  .btn.gray { background:#8e8e93; }
+  .btn:hover { transform:scale(1.04); }
+  .btn:active { transform:scale(.97); opacity:.85; }
+
+  /* signature, bottom right (x=927.5..1281, y=479..797 in the frame) */
+  .sign {
+    position:absolute; right:-1.3px; bottom:34.5px;
+    width:353.8px; max-width:75vw; height:auto; pointer-events:none;
+  }
+</style>
+</head>
+<body>
+  <main class="block">
+    <div class="brand">
+      <img src="logo.svg" alt="">
+      <span>repeat</span>
+    </div>
+    <div class="content">
+      <p>Show up. Log the set. See the progress. Beat the record. Repeat.</p>
+      <a class="btn" href="https://rustore.ru/catalog/app/app.repeatit">get it in on the rustore</a>
+      <a class="btn gray" href="https://github.com/amirmamedgasanov5-droid/repeatit-site/releases/latest/download/repeatit-1.0.0.apk">dowland apk</a>
+    </div>
+  </main>
+  <img class="sign" src="signature.svg" alt="">
+</body>
+</html>
